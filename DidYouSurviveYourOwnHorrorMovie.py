@@ -11,8 +11,10 @@ def main():
 
     print("Hello there!!")
     time.sleep(1)
-    print("Please tell us your name:")
-    userName = str(input(">"))
+    print("Please tell us your first name:")
+    userName = str(input("> "))
+
+    mcName = " ".join(userName.split())
 
     number_one = random.randint(1,100)
 
@@ -20,11 +22,11 @@ def main():
         Killer_Behind_the_door.behindDoorSceneOne()
 
     else:
-        print(userName,", you find yourself lost in the woods.")
+        print(mcName,", you find yourself lost in the woods.")
 
         time.sleep(5)
 
-        Woods_Scene.woods(userName)
+        Woods_Scene.woods(mcName)
 
-
-main()
+if __name__ == "__main__":
+    main()

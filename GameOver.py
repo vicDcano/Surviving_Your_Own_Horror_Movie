@@ -9,9 +9,7 @@ def PlayAgain():
     playAgain = playAgain.lower()
 
     # a while loop to make this game start over if the player wants it to be
-
-    while playAgain == playAgain == 'y':
+    if playAgain == 'y':
         DidYouSurviveYourOwnHorrorMovie.main()
-
-    if playAgain == "n":
+    elif playAgain == 'n':
         exit()
